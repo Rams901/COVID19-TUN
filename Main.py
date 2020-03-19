@@ -10,7 +10,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
 #Importing data:
-df = pd.read_csv("/kaggle/input/covid19/COVID-19-master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv")
+df = pd.read_csv("csse_covid_19_time_series/time_series_19-covid-Confirmed.csv")
 
 #Initializing the x/y variables:
 x = df.columns[4:]
