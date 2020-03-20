@@ -53,7 +53,8 @@ ax.spines["right"].set_visible(False)
 ax.spines["left"].set_visible(False) 
 
 #plotting the predicted data:  
-plt.plot(  model_linear.predict(poly.fit_transform(np.array(date_list).reshape(len(date_list), 1)))[10:], lw = 3, color = "red", alpha = 0.6)
+predictions = poly.fit_transform(np.array(date_list).reshape(len(date_list), 1)))
+plt.plot(  model_linear.predict(predictions[10:], lw = 3, color = "red", alpha = 0.6)
 plt.text(86, 1600, "Infections", fontsize=14, color="red", alpha = 0.6) 
 plt.yticks(fontsize = 14)
 ax.set_xticks([3, 27 , 58, 88 ])
